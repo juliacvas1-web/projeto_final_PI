@@ -7,94 +7,105 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div>
-            <div>
-                <p>Uso consciente de <spam> Recursos</spam></p>
+        <div class="container nav-container">
+            <div class="logo">
+                <p>Uso consciente de <span> Recursos</span></p>
             </div>
-            <div>
-                <p>Apoio Oficial <strong>CBMM</strong> & <strong>ArcelorMittal</strong> & <strong>Proz Educação</strong></p>
+            <div class="patrocinio">
+                <p> Apoio Oficial <strong>CBMM</strong> & <strong>ArcelorMittal</strong> & <strong>Proz Educação</strong></p>
             </div>
         </div>
     </header>
 
-<main>
-    <section> 
+    <main>
+    <section class="container hero"> 
         <div>
-            <h1>Uso Consciente de Recursos e a Sustentabilidade caminham juntos para um futuro melhor para todos</h1>
+            <h1>Uso Consciente de Recursos e a <span>Sustentabilidade</span> caminham juntos para um futuro melhor para todos</h1>
             <p> O uso consciente dos recursos é fundamental para garantir um futuro sustentável para todos. Conheça nossas dicas e conselhos práticos para você se unir a essa causa e trabalhar junto com a gente para criarmos um futuro mais sustentável para nós e para as nossas famílias.</p>
+            <div>
+        <a href="#simulador" class="btn btn-primary"> Testar Simulador </a>
+        <a href="#pilares" class="btn btn-secondary"> Explorar Tecnologias</a>
+            </div>
         </div>
-        <a href="#simulador"> Testar Simulador </a>
-        <a href="#pilares"> Explorar Tecnologias</a>
-        <section>
-            <img src="" alt="Visualize um mundo diferente que podemos criar juntos">
+    <img src="" alt="Visualize um mundo diferente que podemos criar juntos">
         </section>
 
         <section class="pillars-section" id="pilares">
 
             <div class="container">
-                <div>
+
+                <div class="section-header">
                 <h2> Como podemos repensar o nosso consumo para que diminuamos o impacto ambiental e produzamos menos lixo</h2>
                 <p> No vídeo abaixo, você pode ver que existem formas mais sustentáveis de consumir, uma forma de consumo chamada "Zero Waste",
                      que na tradução literal para o português significa "lixo zero"</p>
             </div>
 
-
-        </section>
-        <div>
-            <div class="section-header">
-                <img src="" alt="">
+            <!-- Card 1-->
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                <div class="card-img">
+                <img src="" alt="Operação limpa em fábrica de aço">
             </div>
-            <div>
+            <div class="card-body">
+
                 <h3> Como ser mais eficiente no uso de recursos</h3>
                 <p> Veja no vídeo abaixo dicas de como você pode ser mais eficiente no uso de recursos como água e energia.</p>
             </div>
         </div>
 
-        <div>
-            <div>
-                <img src="" alt="">
+        <!-- card 2-->
+        <div class="pillar-card">
+            <div class="card-img">
+                <img src="" alt="Aplicação de ligas metálicas especiais">
             </div>
-            <div>
+            <div class="card-body">
             <h3> Como ser mais eficiente no uso de recursos</h3>
             <p>A meta é o carbono zero. Com fontes de energia 100% renováveis, uso do hidrogênio verde na produção e forte trabalho de reflorestamento das matas nativas próximas às operações industriais. </p>
         </div>
+    </div>
 
-        <!-- Card 1-->
-        <div class="pillars grid">
-        <div class="pillar-card">
-        <img src="" alt="">
+        <!-- Card 3-->
+         <div class="pillars card">
+            <div class="pillar-img">
+                <img src="" alt="Área fabril com reflorestamento">
         </div>
         <div class="card-body">
-            <h3></h3>
+
+            <h3>Descarbonização Total</h3>
+            <p> A meta é o carbono zero. Com fontes de energia 100% renováveis, uso do hidrogenio verde na produção e forte trabalho de reflorestamento das matas nativas próximas às operações industriais. </p>
         </div>
      </div>
-     </div>
+  </div>
+</div>
     </section>
-    <section>
-        <di>
-            <div>
+
+    <section class="container simulator-section" id="simulador">
+        <div class="simulator-box">
+            <div class="simulator-controls">
                 <h3> Calculadora de Impacto Verde</h3>
                 <p> Descubra o impacto ambiental das suas escolhas diárias com a nossa calculadora.</p>
-                <div>
-                    <button>Reciclar 1 tonelada de aço</button>
-                    <button> Adicionar Nióbio na estrutura</button>
-                    <button> Usar Energia Renovável</button>
-                </div>
-
-                <div>
-    <div>-1.500 kg</div>
-    <div> de emissão de C02</div>
-    <p>A reciclagem evita o processo primário de refino de minério de ferro. 
-        Cada tonelada poupa toneladas de gases estufa no ar</p>
+                </p>
+        <div class="sim-options">
+                    <button class=" sim-btn active">Reciclar 1 tonelada de aço</button>
+                    <button class=" sim-btn"> Adicionar Nióbio na estrutura</button>
+                    <button class="sim-btn"> Usar Energia Renovável</button>
+        </div>
     </div>
-   </div>
+    <div class="simulator-display">
+        <div class="metrica-valor" id="metrica-valor">-1.500 kg</div>
+        <div class="metrica-rotulo" id="metrica-rotulo">de emissão de C0²</div>
+        <A class="metric-desc" id="metrica-descricao">A reciclagem evita o processo
+        primário de refino de minério de ferro. Cada tonelada poupa toneladas de gases estufa no ar</p>
+    </div>
+</div>
     </section>
 </main>
 <footer>
-    <div>
+    <div class="container footer-content">
         <p>&copy; 2026 EcoIndústria</p>
-        <div>
+        <div class="footer-logos">
             <span>Parceria de Desenvolvimento:</span>
             <strong>CBMM</strong>
             <strong>ArcelorMittal</strong>
@@ -102,5 +113,6 @@
         </div>
     </div>
 </footer>
+
 </body>
 </html>
